@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class Cars {
+            constructor(name) {
+                this.brand = name;
+            }
+        }
+
+        const x = new Cars("Ford");
+
+        document.write(x.brand);
+    </script>
+
+
+</body>
+
+</html>
+
+
+// class Cars{
+// constructor(name){
+// this.brand=name;
+// }
+// }
+
+// parent()
+// {
+// return 'I have a ' + this.brand;
+// }
+
+// const mycar = new Cars("Ford");
+// mycar.parent();
+
+
+class Cars{
+constructor(name){
+this.brand=name;
+}
+
+Present() {
+return 'I have a ' + this.brand;
+}
+}
+
+class Model extends Cars{
+constructor(name,mod){
+this.model= mod;
+}
+
+show(){
+return this.Present + "it is a " + this.model;
+}
+}
+
+const mycar = new Model(Ford,Mustank);
+
+mycar.show();
+
+
+export default es6classes;
