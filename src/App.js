@@ -44,6 +44,7 @@ function App() {
         {/* <Navbar title={3} aboutText="About"/> */}
         {/* <Navbar /> */}
         <div className='container my-3'>
+          <TextForm heading='Enter the text to Analyse' />
           {/* <Aboutus /> */}
           {/* <Aboutus /> */}
         </div>
